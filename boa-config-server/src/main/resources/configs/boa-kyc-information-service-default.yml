@@ -1,0 +1,12 @@
+coresystem: 
+  URL:  http://localhost:8090/KYCInformation/
+  Token: Basic amZvcmNlOnBhc3N3b3Jk
+server:
+  port: 8001
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone:  http://192.168.23.134:8761/eureka/  
+    register-with-eureka: true
+    fetch-registry: true
+  

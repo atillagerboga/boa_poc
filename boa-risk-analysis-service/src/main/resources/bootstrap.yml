@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: default
+  application:
+    name: boa-risk-analysis-service
+  cloud:
+    config:
+      uri: http://localhost:8181
+    

@@ -1,0 +1,23 @@
+server:
+  port: 8005
+ 
+spring:
+  activemq:
+    broker-url: tcp://192.168.23.134:61616
+    user: admin
+    password: admin
+    
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone:  http://192.168.23.134:8761/eureka/  
+    register-with-eureka: true
+    fetch-registry: true
+    
+riskanalysis: 
+  request: 
+    queue: APPLY_LOAN_REQUEST_QUEUE
+  riskengine:
+    url:  http://risk.engine/info/  
+    
+    

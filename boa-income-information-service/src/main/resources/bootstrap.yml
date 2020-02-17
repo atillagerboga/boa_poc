@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: default
+  application:
+    name: boa-income-information-service
+  cloud:
+    config:
+      uri: http://192.168.23.134:8181
+    

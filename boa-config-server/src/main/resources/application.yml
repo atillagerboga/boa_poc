@@ -1,0 +1,32 @@
+server:
+  port: 8181
+  
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native 
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configs
+          
+      
+eureka:
+  client:
+    serviceUrl:
+       defaultZone:  http://192.168.23.134:8761/eureka/ 
+    register-with-eureka: true
+    fetch-registry: true
+    
+ 
+# FROM GITHUB REPO    
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/spring-cloud-samples/config-repo  
+#          username: test
+#          password: test   
